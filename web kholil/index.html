@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>UTS</title>
+</head>
+<body>
+    <div class="container">
+        <img src="header.jpg" alt="">
+        <div class="main">
+            <nav>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">events</a>
+                <a href="#">custom</a>
+                <a href="#">contact</a>
+            </nav>
+            <div class="contents">
+                <h2 class="title">beranda</h2>
+                <div class="content">
+                    <h3 class="sub-title">web desain adalah</h3>
+                    <p>Lorem ipzsum dolor sit, amet consectetur adipisicing elit. Nisi qui est nobis enim molestiae omnis vel iure incidunt voluptates quam iste labore laudantium, saepe eligendi, ipsum itaque earum excepturi aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit<span id="dots">...</span><span id="more">Delectus deserunt harum explicabo assumenda aperiam hic numquam ipsum omnis consequatur nisi quisquam iusto voluptates possimus maxime odio soluta,amet doloribus suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt, repellat placeat amet enim officiis animi ad reprehenderit pariatur rem fugit assumenda quis ea mollitia fugiat repudiandae quos beatae ex!. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, neque aut nobis mollitia id harum numquam officia molestias consectetur nihil assumenda earum vitae rem voluptatum, ipsum debitis dolor nesciunt laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quisquam molestiae delectus voluptatem architecto? Vel culpa quo magni excepturi at minima, sint distinctio. Ut nesciunt qui nulla deleniti accusamus. Nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequatur nihil harum unde sapiente velit repellat, at, soluta enim nulla veritatis aut voluptate deserunt quas voluptates id aspernatur facilis. Sint.</span><button onclick="readMore()" id="read-more">read more</button></p>
+                </div>
+                <div class="content">
+                    <h3 class="sub-title">Pengertian animasi</h3>
+                    <p>Lorem ipzsum dolor sit, amet consectetur adipisicing elit. Nisi qui est nobis enim molestiae omnis vel iure incidunt voluptates quam iste labore laudantium, saepe eligendi, ipsum itaque earum excepturi aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright @autoride.com 2022</footer>
+    </div>
+    <script>
+        const titik = document.getElementById('dots');
+        const semuaTeks = document.getElementById('more');
+        const tombol = document.getElementById('read-more');
+
+        function readMore() {
+            if (titik.style.display === "none") {
+                titik.style.display = "inline";
+                tombol.innerHTML = "Read more"; 
+                semuaTeks.style.display = "none";
+            } else {
+                titik.style.display = "none";
+                tombol.innerHTML = "Read less"; 
+                semuaTeks.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>
